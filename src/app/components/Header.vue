@@ -4,7 +4,9 @@
     <TodoTextInput
       v-bind:newTodo="true"
       v-bind:placeholder="'What needs to be done?'"
-      v-on:save="handleSave" />
+      v-on:save="handleSave">
+      <!-- <div slot="header">test</div> -->
+    </TodoTextInput>
   </header>
 </template>
 

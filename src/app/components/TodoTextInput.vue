@@ -1,12 +1,15 @@
 <template>
-  <input
-    ref="input"
-    v-bind:class="{ 'edit': editing, 'new-todo': newTodo }"
-    v-model="value"
-    v-on:keypress.13="handleSubmit()"
-    v-on:blur="handleBlur()"
-    v-bind:placeholder="placeholder"
-    type="text">
+  <div class="input">
+    <input
+      ref="input"
+      v-bind:class="{ 'edit': editing, 'new-todo': newTodo }"
+      v-model="value"
+      v-on:keypress.13="handleSubmit()"
+      v-on:blur="handleBlur()"
+      v-bind:placeholder="placeholder"
+      type="text">
+    <!-- <slot name="header">none</slot> -->
+  </div>
 </template>
 
 <script>
